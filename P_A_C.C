@@ -1,6 +1,7 @@
-/* permutari de k */
-/* aranjamente de n luate cate k */
-/* combinari de n luate cate k */
+/* permutations of n-set */
+/* k-arrangements of n-set */
+/* k-combinations of an n-set */
+/* e.g.: n-set = {1,2,3,4,5} , k =3 */
 // k <= n
 
 #include <conio.h>
@@ -18,7 +19,7 @@ int main()
   scanf("%u",&n);
   printf("k= ");
   scanf("%u",&k);
-  p=fact(k);
+  p=fact(n);
   a=fact(n)/fact(n-k);
   c=fact(n)/(fact(k)*fact(n-k));
   printf("\n\nPermutations(%d)=%3.2f\n\n",n,p);
